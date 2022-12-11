@@ -1,6 +1,7 @@
 package codegym.controller;
 
 import codegym.model.ClassRoom;
+import codegym.model.Student;
 import codegym.service.impl.IClassRoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

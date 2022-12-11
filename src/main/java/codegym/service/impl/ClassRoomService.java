@@ -1,6 +1,7 @@
 package codegym.service.impl;
 
 import codegym.model.ClassRoom;
+import codegym.model.Student;
 import codegym.repository.IClassRoomRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

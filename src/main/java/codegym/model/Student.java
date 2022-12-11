@@ -1,6 +1,7 @@
 package codegym.model;
 
 import javax.persistence.*;
+import java.sql.Date;
 
 @Entity
 public class Student {
@@ -12,6 +13,8 @@ public class Student {
     @ManyToOne
     private ClassRoom classRoom;
 
+    private Date expire_date;
+
     public Student() {
     }
 
@@ -20,6 +23,15 @@ public class Student {
         this.name = name;
         this.img = img;
         this.classRoom = classRoom;
+        this.expire_date = expire_date;
+    }
+
+    public Date getExpire_date() {
+        return expire_date;
+    }
+
+    public void setExpire_date(Date expire_date) {
+        this.expire_date = expire_date;
     }
 
     public long getId() {

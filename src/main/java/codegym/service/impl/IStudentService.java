@@ -9,4 +9,8 @@ import java.util.List;
 public interface IStudentService extends ICRUD_Service<Student> {
     List<Student> findByName(String name);
 
+    List<Student> findStudentExpireFee();
+
+    List<Student> getClassAvgScores();
+
 }
